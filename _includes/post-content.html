@@ -16,7 +16,7 @@
         {% endfor %}
 
         {% assign author = site.authors[post.author] %}
-        <a href="/authors/{{ post.author }}" style="margin-left:2rem;">
+        <a href="/authors/{{ post.author }}" style="margin-left:1rem;">
             <span class="tag is-info">by {{ author.display_name }}</span>
         </a>
     </p>
@@ -29,7 +29,7 @@
             <span class="tag">{{ tag | first }}</span>
         </a>
         {% endfor %}
-
+        <span style="margin-left:1rem;"></span>
         {% for author in site.authors %}
         <a href="/authors/{{ author[0] }}">
             <span class="tag is-info">{{ author[1].display_name }}</span>

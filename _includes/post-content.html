@@ -24,6 +24,9 @@
 <div class="content">
     <p class="subtitle has-text-centered">All tags & authors</p>
     <p class="has-text-centered">
+        <a href="/">
+            <span class="tag">latest</span>
+        </a>
         {% for tag in site.tags %}
         <a href="/tags/{{tag|first}}">
             <span class="tag">{{ tag | first }}</span>

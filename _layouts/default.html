@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="256 words of knowledge, experience, understanding, common sense, and insight.">
-    <link rel="canonical" href="https://www.256words.com{{ page.url | replace:'index.html','' }}" />
-    <link rel="shortcut icon" href="/favicon-32x32.png" />
+    <link rel="canonical" href="https://www.256words.com{{ page.url | replace:'index.html','' }}"/>
+    <link rel="shortcut icon" href="/favicon-32x32.png"/>
     <title>256 words of wisdom</title>
+    <link rel="stylesheet" type="text/css" href="/css/bulma.min.css"/>
     <style>
         html {
             background: linear-gradient(135deg, #38b7f2 0%, #833cf6 100%);
@@ -24,10 +25,6 @@
             font-family: "Times New Roman", Times, serif;
         }
 
-        .tag {
-            margin: 0.25rem;
-        }
-
         @media screen and (max-width: 768px) {
             section.section {
                 padding: 0;
@@ -36,24 +33,6 @@
     </style>
 </head>
 <body>
-
 {{ content }}
-
-<noscript id="deferred-styles">
-    <link rel="stylesheet" type="text/css" href="/css/bulma.min.css"/>
-</noscript>
-<script>
-    var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-    };
-    var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
-        window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-    else window.addEventListener('load', loadDeferredStyles);
-</script>
 </body>
 </html>

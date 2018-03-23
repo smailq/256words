@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>256 words of wisdom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <style>
+        html {
+            background: linear-gradient(135deg, #38b7f2 0%, #833cf6 100%);
+            min-height: 100%;
+        }
+
+        div.content {
+            margin: 0 auto;
+            max-width: 700px;
+            background-color: #f5f5f5;
+            padding: 2rem;
+        }
+
+        .content-body-text {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .tag {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            section.section {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+{{ content }}
+
+</body>
+</html>

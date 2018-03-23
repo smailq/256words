@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<section class="section">
+    <div class="container">
+        <div class="content">
+
+            <h1 class="title">
+                {{ page.tag }}
+            </h1>
+
+            <hr>
+
+            {% for post in site.posts %}
+
+            {% if post.tags contains page.tag %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
+
+            {% endfor %}
+
+        </div>
+
+        <div class="content">
+            <p class="subtitle has-text-centered">All tags & authors</p>
+            <p class="has-text-centered">
+                {% for tag in site.tags %}
+                <a href="/tags/{{tag|first}}">
+                    <span class="tag">{{ tag | first }}</span>
+                </a>
+                {% endfor %}
+
+                {% for author in site.authors %}
+                <a href="/authors/{{ author[0] }}">
+                    <span class="tag is-info">{{ author[1].display_name }}</span>
+                </a>
+                {% endfor %}
+            </p>
+        </div>
+    </div>
+</section>

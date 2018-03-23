@@ -1,0 +1,39 @@
+<div class="content">
+
+    <h1 class="title">{{ post.title }}</h1>
+
+    <hr style="margin-bottom:2rem;">
+
+    <div class="content-body-text is-size-4 is-size-5-mobile">
+        {{ post.content | markdownify}}
+    </div>
+
+    <p class="has-text-right" style="margin-top:3rem;">
+        {% for tag in post.tags %}
+        <a href="/tags/{{ tag }}">
+            <span class="tag">{{ tag }}</span>
+        </a>
+        {% endfor %}
+
+        {% assign author = site.authors[post.author] %}
+        <a href="/authors/{{ post.author }}" style="margin-left:2rem;">
+            <span class="tag is-info">by {{ author.display_name }}</span>
+        </a>
+    </p>
+</div>
+<div class="content">
+    <p class="subtitle has-text-centered">All tags & authors</p>
+    <p class="has-text-centered">
+        {% for tag in site.tags %}
+        <a href="/tags/{{tag|first}}">
+            <span class="tag">{{ tag | first }}</span>
+        </a>
+        {% endfor %}
+
+        {% for author in site.authors %}
+        <a href="/authors/{{ author[0] }}">
+            <span class="tag is-info">{{ author[1].display_name }}</span>
+        </a>
+        {% endfor %}
+    </p>
+</div>

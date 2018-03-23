@@ -51,3 +51,4 @@ authors:
     email: smailq@gmail.com
     web: https://www.256words.com
 
+include: [_headers]

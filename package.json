@@ -1,0 +1,7 @@
+{
+  "name": "256words",
+  "version": "0.0.1",
+  "dependencies": {
+    "uncss": "latest"
+  }
+}

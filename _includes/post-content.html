@@ -8,6 +8,8 @@
         {{ post.content | markdownify}}
     </div>
 
+    <hr>
+
     <p class="has-text-right" style="margin-top:3rem;">
         {% for tag in post.tags %}
         <a href="/tags/{{ tag }}">

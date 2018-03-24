@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<form style="max-width:400px;margin-top:2rem;" name="subscribe" method="POST" netlify>
+<form style="max-width:400px;margin-top:4rem;" name="subscribe" method="POST" netlify>
     <p class="subtitle has-text-centered">Get new post via email</p>
 
     <div class="field">
@@ -21,3 +21,24 @@ layout: default
         </div>
     </div>
 </form>
+
+
+<div class="content" style="margin-top:2rem;">
+    <p class="subtitle has-text-centered">All tags & authors</p>
+    <p class="has-text-centered">
+        <a href="/">
+            <span class="tag">latest</span>
+        </a>
+        {% for tag in site.tags %}
+        <a href="/tags/{{tag|first}}">
+            <span class="tag">{{ tag | first }}</span>
+        </a>
+        {% endfor %}
+        <span style="margin-left:1rem;"></span>
+        {% for author in site.authors %}
+        <a href="/authors/{{ author[0] }}">
+            <span class="tag is-dark">{{ author[1].display_name }}</span>
+        </a>
+        {% endfor %}
+    </p>
+</div>

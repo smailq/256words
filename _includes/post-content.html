@@ -8,42 +8,63 @@
         {{ post.content | markdownify}}
     </div>
 
-    <hr>
+    <div class="level" style="margin-top:4rem;">
+        <div class="level-left">
+            <div class="level-item">
+                <div>
+                    <sup>Tagged in</sup>
+                    {% for tag in post.tags %}
+                    <a style="margin-left:0.25rem;" href="/tags/{{ tag }}">
+                        <span class="tag">{{ tag }}</span>
+                    </a>
+                    {% endfor %}
+                </div>
 
-    <p class="has-text-right" style="margin-top:3rem;">
-        {% for tag in post.tags %}
-        <a href="/tags/{{ tag }}">
-            <span class="tag">{{ tag }}</span>
-        </a>
-        {% endfor %}
+            </div>
+        </div>
+        <div class="level-right">
 
-        {% assign author = site.authors[post.author] %}
-        <a href="/authors/{{ post.author }}" style="margin-left:1rem;">
-            <span class="tag is-dark">{{ author.display_name }}</span>
-        </a>
-    </p>
+            <div class="level-item">
+                <div>
+                    {% assign author = site.authors[post.author] %}
+                    <sup>Reviewed by </sup>
+                    <span style="margin-left:0.25rem;" class="tag is-dark">Jeilan</span>
+
+                    <sup style="margin-left:1rem;">Written by</sup>
+                    <a href="/authors/{{ post.author }}" style="margin-left:0.25rem;">
+                        <span class="tag is-info">{{ author.display_name }}</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 <div class="content">
-    <p class="subtitle has-text-centered">All tags & authors</p>
+    <p class="subtitle has-text-centered">Tags & Contributors</p>
     <p class="has-text-centered">
         <a href="/">
             <span class="tag">latest</span>
         </a>
+
         {% for tag in site.tags %}
         <a href="/tags/{{tag|first}}">
             <span class="tag">{{ tag | first }}</span>
         </a>
         {% endfor %}
+
         <span style="margin-left:1rem;"></span>
+
         {% for author in site.authors %}
         <a href="/authors/{{ author[0] }}">
-            <span class="tag is-dark">{{ author[1].display_name }}</span>
+            <span class="tag is-info">{{ author[1].display_name }}</span>
         </a>
         {% endfor %}
     </p>
 </div>
 
 <p class="has-text-centered" style="margin:2rem;">
-    <a class="button is-white" style="box-shadow: 2px 2px 5px rgb(76, 76, 76);" href="/subscribe">Subscribe to new posts</a>
+    <a class="button is-white" style="box-shadow: 2px 2px 5px rgb(76, 76, 76);" href="/subscribe">Subscribe to new
+        posts</a>
 </p>

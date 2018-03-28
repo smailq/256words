@@ -1,6 +1,6 @@
 <div class="content">
 
-    <h1 class="title">{{ post.title }}</h1>
+    <h1 class="title" style="font-family: Courier, serif;">{{ post.title }}</h1>
 
     <hr style="margin-bottom:2rem;">
 
@@ -28,11 +28,14 @@
         <div class="level-right" style="margin-top:1rem;">
 
             {% assign author = site.authors[post.author] %}
+            {% assign reviewer = site.authors[post.reviewer] %}
 
             <div class="level-item">
                 <div class="has-text-left-mobile" style="width:100%;">
                     <sup>Reviewed by </sup>
-                    <span style="margin-left:0.25rem;" class="tag is-dark">Jeilan</span>
+                    <a href="/authors/{{ post.reviewer }}" style="margin-left:0.25rem;">
+                        <span class="tag is-dark">{{ reviewer.display_name }}</span>
+                    </a>
                 </div>
             </div>
 

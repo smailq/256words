@@ -50,6 +50,11 @@ authors:
     display_name: Kyu Lee
     email: smailq@gmail.com
     web: https://www.256words.com
+  jeilan:
+    name: Jeilan
+    display_name: Jeilan
+    email: ""
+    web: ""
 
 include: [_headers, _redirects]
 

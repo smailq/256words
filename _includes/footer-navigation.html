@@ -7,7 +7,7 @@
 
         {% for tag in site.tags %}
         <a href="/tags/{{tag|first}}">
-            <span class="tag is-link">{{ tag | first }}</span>
+            <span class="tag is-link" style="margin-bottom:0.5rem;">{{ tag | first }}</span>
         </a>
         {% endfor %}
 
@@ -15,7 +15,7 @@
 
         {% for author in site.authors %}
         <a href="/authors/{{ author[0] }}">
-            <span class="tag is-dark">{{ author[1].display_name }}</span>
+            <span class="tag is-dark" style="margin-bottom:0.5rem;">{{ author[1].display_name }}</span>
         </a>
         {% endfor %}
     </p>

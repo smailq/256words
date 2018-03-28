@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  Characteristics of a good program
+title:  Characteristics of a beautiful computer program
 tags: programming opinions 
 author: kyu
 reviewer: 
 ---
-Good program is.. ?
+People often associate programming with art.
+
+beautiful program is.. ?
 
 Simple / yet readable
 

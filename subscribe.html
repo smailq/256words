@@ -22,26 +22,4 @@ layout: default
     </div>
 </form>
 
-
-<div class="content" style="margin-top:2rem;">
-    <p class="subtitle has-text-centered">Tags & Contributors</p>
-    <p class="has-text-centered">
-        <a href="/">
-            <span class="tag">latest</span>
-        </a>
-
-        {% for tag in site.tags %}
-        <a href="/tags/{{tag|first}}">
-            <span class="tag">{{ tag | first }}</span>
-        </a>
-        {% endfor %}
-
-        <span style="margin-left:1rem;"></span>
-
-        {% for author in site.authors %}
-        <a href="/authors/{{ author[0] }}">
-            <span class="tag is-dark">{{ author[1].display_name }}</span>
-        </a>
-        {% endfor %}
-    </p>
-</div>
+{% include footer-navigation.html %}

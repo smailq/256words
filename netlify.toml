@@ -1,0 +1,5 @@
+[build]
+  command = "jekyll build"
+
+[context.develop]
+  command = "jekyll build --drafts"

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Characteristics of a beautiful computer program
+title:  Characteristics of a beautiful code
 tags: programming opinions 
 author: kyu
 reviewer: 

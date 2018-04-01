@@ -18,5 +18,3 @@ Maintainable - Readability, Testability
 Flexible, adaptable, Margin of error,
 
 Performance, less wasted cpu time, memory, disk space, network calls
-
-

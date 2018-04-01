@@ -9,3 +9,4 @@ To build -
 jekyll build
 ```
 
+Hosted on Netlify.

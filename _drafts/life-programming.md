@@ -22,3 +22,5 @@ Engineering my life towards more meaningful, effective entity, by improving prog
 Provide positive change to people around me, environment around me.
 
 List of habits, exercises, mental frameworks, etc.
+
+Programs need patching, updates, maintenance.

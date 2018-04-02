@@ -37,3 +37,7 @@ Manage personal finance
 spreadsheet of examples.
 
 step by step todo list
+
+minimize expenses
+maximize income
+leftover goes to savings/investments

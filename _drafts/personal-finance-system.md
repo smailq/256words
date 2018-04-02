@@ -32,3 +32,8 @@ Manage personal finance
 *** hobbies that generate small income
 *** blogs, stock photos, courses, etc
 *** Real estate - if affordable & time
+*** simple web service
+
+spreadsheet of examples.
+
+step by step todo list
